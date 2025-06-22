@@ -9,7 +9,9 @@ export default function Header() {
           <span>Adventure Sheet</span>
         </Link>
         <ul>
-          <li>New Sheet</li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
         </ul>
       </nav>
     </header>
