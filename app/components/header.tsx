@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ModeToggle } from "./mode-toggle"
 
 export default function Header() {
   return (
@@ -8,9 +9,12 @@ export default function Header() {
           <span>Fabled Lands</span>
           <span>Adventure Sheet</span>
         </Link>
-        <ul>
+        <ul className="flex items-center gap-4">
           <li>
             <Link href="/about">About</Link>
+          </li>
+          <li>
+            <ModeToggle />
           </li>
         </ul>
       </nav>
